@@ -91,9 +91,9 @@ class preprocessing:
 
         return img_removed_line
 
-
-img = cv2.imread("captcha.png")
-p = preprocessing()
-p.pre_proc_image(img)
-cv2.imshow("Image", img)
-cv2.waitKey(0)
+if __name__ == '__main__':
+    img = cv2.imread("captcha.png")
+    p = preprocessing()
+    imgNew = p.pre_proc_image(img)
+    cv2.imshow("Image", imgNew)
+    cv2.waitKey(0)
