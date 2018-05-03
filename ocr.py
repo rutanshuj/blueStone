@@ -5,6 +5,8 @@ import argparse
 import cv2
 import os
 
+pytesseract.pytesseract.tesseract_cmd = 'C:/Program Files (x86)/Tesseract-OCR/tesseract'
+
 #construct the argument parse and parse the arguments
 ap = argparse.ArgumentParser()
 ap.add_argument("-i", "--image", required = True, help="path to image to be OCR'd")
@@ -28,12 +30,12 @@ elif args["preprocess"] == "blur":
 
 # write the grayscale image to disk as a temporary file so we can
 # apply OCR to it
-filename = "captchaProc.png".format(os.getpid())
+filename = "capcthaProc.png".format(os.getpid())
 cv2.imwrite(filename, gray)
 
 # load the image as a PIL/Pillow image, apply OCR, and then delete
 # the temporary file
-text = pytesseract.image_to_string(Image.open("captchaProc.png"))
+text = pytesseract.image_to_string(Image.open("D:/BlueStone/captchaProc.png"))
 os.remove(filename)
 print(text)
 
