@@ -78,7 +78,7 @@ class preprocessing:
             i,j=y[dex],x[dex]
             i=int(i)
             j=int(j)
-            while True:
+            while i<len(img_removed_line)-1:
                 f2=i
                 if img_removed_line[i][j]==0 and img_removed_line[i+1][j]==0:
                     break
