@@ -68,7 +68,7 @@ class preprocessing:
             i=int(i)
             j=int(j)
             rlist=[]
-            while True:
+            while i>=0:
                 f1=i
                 if img_removed_line[i][j]==0 and img_removed_line[i-1][j]==0:
                     break
@@ -92,7 +92,8 @@ class preprocessing:
         return img_removed_line
 
 if __name__ == '__main__':
-    img = cv2.imread("captcha.png")
+    image = cv2.imread("captcha.png")
+    img = Image.fromarray(image)
     p = preprocessing()
     imgNew = p.pre_proc_image(img)
     cv2.imshow("Image", imgNew)
