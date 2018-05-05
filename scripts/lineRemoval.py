@@ -96,5 +96,5 @@ if __name__ == '__main__':
     p = preprocessing()
     imgNew = p.pre_proc_image(img)
     cv2.imshow("Input", np.array(image))
-    cv2.imshow('Output', np.array(imgNew, dtype=np.uint8))
+    cv2.imwrite('Output.png', np.array(imgNew, dtype=np.uint8))
     cv2.waitKey(0)
