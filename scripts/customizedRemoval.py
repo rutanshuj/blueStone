@@ -3,38 +3,30 @@ from scipy.misc import toimage
 from operator import itemgetter
 from skimage import measure
 import numpy as np
+import copy
 import heapq
 import cv2
 import matplotlib.pyplot as plt
 from scipy.ndimage.filters import median_filter
 
 
-
 #----------------------------------------------------------------
 
 class preprocessing:
     def pre_proc_image(self,img):
-        img_removed_noise=self.apply_median_filter(img)
-        #img_removed_noise=self.remove_noise(img)
+        #img_removed_noise=self.apply_median_filter(img)
+        img_removed_noise=self.remove_noise(img)
         p1,p2,LL=self.get_line_position(img_removed_noise)
         img=self.remove_line(p1,p2,LL,img_removed_noise)
-        img=median_filter(np.asarray(img),1)
+        #img=median_filter(np.asarray(img),1)
         return img
 
     def remove_noise(self,img):
-        img_gray=img.convert('L')
-        w,h=img_gray.size
-        max_color=np.asarray(img_gray).max()
-        pix_access_img=img_gray.load()
-        row_img=list(map(lambda x:255 if x in range(max_color-15,max_color+1) else 0,np.asarray(img_gray.getdata())))
-        img=np.reshape(row_img,[h,w])
-        return img
-
-    def apply_median_filter(self,img):
-        img_gray=img.convert('L')
-        img_gray=cv2.medianBlur(np.asarray(img_gray),3)
-        img_bw=(img_gray>np.mean(img_gray))*255
-        return img_bw
+        imgNew1 = np.asanyarray(img)
+        gray = cv2.cvtColor(imgNew1, cv2.COLOR_BGR2GRAY)
+        imgr = cv2.medianBlur(gray, 3)
+        print(imgr)
+        return imgr
 
     def eliminate_zeros(self,vector):
         return [(dex,v) for (dex,v) in enumerate(vector) if v!=0 ]
@@ -77,7 +69,7 @@ class preprocessing:
             i,j=y[dex],x[dex]
             i=int(i)
             j=int(j)
-            while i>=0 and i<len(img_removed_line)-1:
+            while i<len(img_removed_line)-1:
                 f2=i
                 if img_removed_line[i][j]==0 and img_removed_line[i+1][j]==0:
                     break
@@ -95,6 +87,5 @@ if __name__ == '__main__':
     img = Image.fromarray(image)
     p = preprocessing()
     imgNew = p.pre_proc_image(img)
-    cv2.imshow("Input", np.array(image))
-    cv2.imshow('Output', np.array(imgNew, dtype=np.uint8))
+    #cv2.imshow("Image", imgNew1)
     cv2.waitKey(0)

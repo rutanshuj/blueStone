@@ -30,7 +30,7 @@ elif args["preprocess"] == "blur":
 
 # write the grayscale image to disk as a temporary file so we can
 # apply OCR to it
-filename = "capcthaProc2.png".format(os.getpid())
+filename = "captcha.png".format(os.getpid())
 cv2.imwrite(filename, gray)
 
 # load the image as a PIL/Pillow image, apply OCR, and then delete
