@@ -26,7 +26,7 @@ if __name__ == '__main__':
     imgOP = p.pre_proc_image(image)
 
     filename = "Output.png".format(os.getpid())
-    cv2.imwrite(filename, imgOP)
+    cv2.imwrite(filename, np.array(imgOP))
 
     text = pytesseract.image_to_string(Image.open(filename))
     #os.remove(filename)
