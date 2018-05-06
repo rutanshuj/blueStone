@@ -29,5 +29,5 @@ if __name__ == '__main__':
     cv2.imwrite(filename, imgOP)
 
     text = pytesseract.image_to_string(Image.open(filename))
-    os.remove(filename)
+    #os.remove(filename)
     print(text)
