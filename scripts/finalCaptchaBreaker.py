@@ -10,7 +10,7 @@ class preProcessing:
 
     def pre_proc_image(self,img):
         img = np.array(img,dtype=np.uint8)
-        retvalue, img = cv2.threshold(img, 4, 255, cv2.THRESH_BINARY)
+        retvalue, img = cv2.threshold(img, 2, 255, cv2.THRESH_BINARY)
         # cv2.imshow("Threshold Changes",np.array(img,dtype=np.uint8))
         # cv2.waitKey(0)
         img = Image.fromarray(img)
