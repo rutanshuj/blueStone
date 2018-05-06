@@ -6,6 +6,7 @@ import numpy as np
 import heapq
 import cv2
 import matplotlib.pyplot as plt
+import pytesseract
 from scipy.ndimage.filters import median_filter
 
 
@@ -16,6 +17,13 @@ class preprocessing:
     def pre_proc_image(self,img):
         img_removed_noise=self.apply_median_filter(img)
         #img_removed_noise=self.remove_noise(img)
+        img_removed_noise = np.array(img_removed_noise,dtype=np.uint8)
+        retvalue, image = cv2.threshold(img_removed_noise, 12, 255, cv2.THRESH_BINARY)
+        cv2.imshow("ThresholdImage", image)
+        cv2.waitKey(0)
+        finalImg = Image.fromarray(image)
+        text = pytesseract.image_to_string(Image.open(finalImg))
+        print(text)
         p1,p2,LL=self.get_line_position(img_removed_noise)
         img=self.remove_line(p1,p2,LL,img_removed_noise)
         img=median_filter(np.asarray(img),1)
@@ -95,6 +103,7 @@ if __name__ == '__main__':
     img = Image.fromarray(image)
     p = preprocessing()
     imgNew = p.pre_proc_image(img)
-    cv2.imshow("Input", np.array(image))
-    cv2.imwrite('Output.png', np.array(imgNew, dtype=np.uint8))
-    cv2.waitKey(0)
+
+    # cv2.imshow("Input", np.array(image))
+    # cv2.imwrite('Output.png', np.array(imgNew, dtype=np.uint8))
+    # cv2.waitKey(0)
