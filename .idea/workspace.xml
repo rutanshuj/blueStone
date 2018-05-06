@@ -2,12 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a8917772-8516-4a1c-b024-67172b1b8751" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/finalCaptchaBreaker.py" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/captcha.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/customizedRemoval.py" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/finalCaptchaBreaker.py" afterPath="$PROJECT_DIR$/scripts/finalCaptchaBreaker.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/lineRemoval.py" afterPath="$PROJECT_DIR$/scripts/lineRemoval.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/login/loginAutomate.py" afterPath="$PROJECT_DIR$/scripts/login/loginAutomate.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -19,11 +15,11 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="lineRemoval.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="lineRemoval.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/scripts/lineRemoval.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="249">
-              <caret line="106" column="63" lean-forward="true" selection-start-line="106" selection-start-column="31" selection-end-line="106" selection-end-column="63" />
+            <state relative-caret-position="266">
+              <caret line="100" column="22" lean-forward="false" selection-start-line="100" selection-start-column="22" selection-end-line="100" selection-end-column="22" />
               <folding>
                 <element signature="e#0#33#0" expanded="true" />
               </folding>
@@ -31,32 +27,15 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ocr.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/scripts/ocr.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="390">
-              <caret line="40" column="0" lean-forward="true" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="finalCaptchaBreaker.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="finalCaptchaBreaker.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/scripts/finalCaptchaBreaker.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="26" column="18" lean-forward="true" selection-start-line="24" selection-start-column="3" selection-end-line="26" selection-end-column="18" />
+            <state relative-caret-position="283">
+              <caret line="32" column="15" lean-forward="false" selection-start-line="32" selection-start-column="15" selection-end-line="32" selection-end-column="15" />
               <folding>
                 <element signature="e#0#10#0" expanded="true" />
               </folding>
             </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="captcha.png" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/scripts/captcha.png">
-          <provider selected="true" editor-type-id="images">
-            <state />
           </provider>
         </entry>
       </file>
@@ -89,8 +68,8 @@
         <option value="$PROJECT_DIR$/scripts/customizedRemoval.py" />
         <option value="$PROJECT_DIR$/scripts/requests/automatedLogin.py" />
         <option value="$PROJECT_DIR$/scripts/login/loginAutomate.py" />
-        <option value="$PROJECT_DIR$/scripts/lineRemoval.py" />
         <option value="$PROJECT_DIR$/scripts/finalCaptchaBreaker.py" />
+        <option value="$PROJECT_DIR$/scripts/lineRemoval.py" />
       </list>
     </option>
   </component>
@@ -441,7 +420,7 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#29#50#0" expanded="false" />
+            <element signature="e#29#50#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -458,11 +437,6 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/nmt.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/scripts/captcha1.png">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -474,11 +448,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/scripts/captchaNoise.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/Output.png">
       <provider selected="true" editor-type-id="images">
         <state />
       </provider>
@@ -506,40 +475,57 @@
         <state />
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/captcha.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/scripts/ocr.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="40" column="0" lean-forward="true" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/captcha.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/captcha.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/lineRemoval.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="249">
-          <caret line="106" column="63" lean-forward="true" selection-start-line="106" selection-start-column="31" selection-end-line="106" selection-end-column="63" />
+        <state relative-caret-position="198">
+          <caret line="39" column="11" lean-forward="true" selection-start-line="39" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
           <folding>
-            <element signature="e#0#33#0" expanded="true" />
+            <element signature="e#29#50#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/Output.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/nmt.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/example_01.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/captcha.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/scripts/finalCaptchaBreaker.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="26" column="18" lean-forward="true" selection-start-line="24" selection-start-column="3" selection-end-line="26" selection-end-column="18" />
+        <state relative-caret-position="283">
+          <caret line="32" column="15" lean-forward="false" selection-start-line="32" selection-start-column="15" selection-end-line="32" selection-end-column="15" />
           <folding>
             <element signature="e#0#10#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/lineRemoval.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="100" column="22" lean-forward="false" selection-start-line="100" selection-start-column="22" selection-end-line="100" selection-end-column="22" />
+          <folding>
+            <element signature="e#0#33#0" expanded="true" />
           </folding>
         </state>
       </provider>
