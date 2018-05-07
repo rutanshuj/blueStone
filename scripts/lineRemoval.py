@@ -17,6 +17,8 @@ class preprocessing:
     def pre_proc_image(self,img):
         img_removed_noise=self.apply_median_filter(img)
         #img_removed_noise=self.remove_noise(img)
+        # cv2.imshow("Beech", np.array(img_removed_noise, dtype=np.uint8))
+        # cv2.waitKey(0)
         p1,p2,LL=self.get_line_position(img_removed_noise)
         img=self.remove_line(p1,p2,LL,img_removed_noise)
         img=median_filter(np.asarray(img),1)
@@ -92,7 +94,7 @@ class preprocessing:
         return img_removed_line
 
 if __name__ == '__main__':
-    image = cv2.imread("captcha.png")
+    image = cv2.imread("Output2.png")
     img = Image.fromarray(image)
     p = preprocessing()
     imgNew = p.pre_proc_image(img)

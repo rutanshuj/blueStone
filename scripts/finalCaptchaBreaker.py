@@ -3,8 +3,6 @@ import numpy as np
 from PIL import Image
 import os
 import pytesseract
-import matplotlib.cm as cm
-import matplotlib.pyplot as plt
 
 class preProcessing:
 
@@ -25,14 +23,24 @@ class preProcessing:
         return img_bw
 
 if __name__ == '__main__':
-    image = cv2.imread('captcha.png')
+    image = cv2.imread('captcha1.png')
     image = Image.fromarray(image)
     p = preProcessing()
     imgOP = p.pre_proc_image(image)
 
-    filename = "Output.png".format(os.getpid())
-    cv2.imwrite(filename, imgOP)
-    text = pytesseract.image_to_string(Image.open(filename))
+
+    imageEr = cv2.imread("invCaptcha.png")
+    kernel = np.ones((2, 2), np.uint8)
+    erosion = cv2.erode(imageEr, kernel, iterations=2)
+    kernel = np.ones((2, 2), np.uint8)
+    dilation = cv2.dilate(erosion, kernel, iterations=2)
+    cv2.imshow("ErodedImage", dilation)
+    cv2.waitKey(0)
+
+    filename = "Output1.png".format(os.getpid())
+    cv2.imwrite(filename, dilation)
+
+    text = pytesseract.image_to_string(Image.open(filename),config="-c tessedit_char_whitelist=0123456789ABCDEFGHIJKMNOPQRSTUVWXYZ")
 
     #os.remove(filename)
     print(text)
