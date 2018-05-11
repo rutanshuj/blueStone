@@ -1,0 +1,227 @@
+[
+  {
+    "_id": "5af59799706d0e062f387192",
+    "index": 0,
+    "guid": "2d0759fb-dbf2-4310-b86c-5001d0bb68ba",
+    "isActive": true,
+    "balance": "$1,635.78",
+    "picture": "http://placehold.it/32x32",
+    "age": 28,
+    "eyeColor": "green",
+    "name": "Sellers Chang",
+    "gender": "male",
+    "company": "EZENTIA",
+    "email": "sellerschang@ezentia.com",
+    "phone": "+1 (820) 544-2399",
+    "address": "787 Vanderveer Place, Saranap, Ohio, 5912",
+    "about": "Occaecat sint consequat consectetur eiusmod qui minim incididunt sit. Occaecat ad adipisicing culpa eu. Est cillum nisi aute cillum culpa veniam cupidatat exercitation. Anim velit ut est velit id nulla sunt sint dolor excepteur culpa ea mollit amet.\r\n",
+    "registered": "2014-09-21T05:01:57 -06:-30",
+    "latitude": -75.027224,
+    "longitude": -69.670471,
+    "tags": [
+      "sint",
+      "sunt",
+      "et",
+      "cupidatat",
+      "nulla",
+      "ex",
+      "cillum"
+    ],
+    "friends": [
+      {
+        "id": 0,
+        "name": "Shawn Richardson"
+      },
+      {
+        "id": 1,
+        "name": "Carpenter Jensen"
+      },
+      {
+        "id": 2,
+        "name": "Brittney Nolan"
+      }
+    ],
+    "greeting": "Hello, Sellers Chang! You have 10 unread messages.",
+    "favoriteFruit": "strawberry"
+  },
+  {
+    "_id": "5af59799c53e7004bda6bc57",
+    "index": 1,
+    "guid": "cfe9b106-46f3-4ea7-95e2-0c54c2062225",
+    "isActive": true,
+    "balance": "$3,095.60",
+    "picture": "http://placehold.it/32x32",
+    "age": 25,
+    "eyeColor": "brown",
+    "name": "Young Williamson",
+    "gender": "male",
+    "company": "QUILM",
+    "email": "youngwilliamson@quilm.com",
+    "phone": "+1 (992) 414-2843",
+    "address": "217 Coventry Road, Nadine, Palau, 3216",
+    "about": "Esse voluptate commodo excepteur incididunt amet tempor ex qui. Quis cillum ea id nostrud ea non pariatur enim cillum officia laborum. Non amet sunt nostrud Lorem qui exercitation commodo esse ad ipsum.\r\n",
+    "registered": "2017-09-04T08:09:16 -06:-30",
+    "latitude": 44.77758,
+    "longitude": -172.133817,
+    "tags": [
+      "dolor",
+      "nulla",
+      "voluptate",
+      "labore",
+      "consequat",
+      "est",
+      "magna"
+    ],
+    "friends": [
+      {
+        "id": 0,
+        "name": "Patel Wilcox"
+      },
+      {
+        "id": 1,
+        "name": "Beck Russell"
+      },
+      {
+        "id": 2,
+        "name": "Holmes Dodson"
+      }
+    ],
+    "greeting": "Hello, Young Williamson! You have 8 unread messages.",
+    "favoriteFruit": "apple"
+  },
+  {
+    "_id": "5af59799f0358611da64cc1e",
+    "index": 2,
+    "guid": "f94f1a17-a8ba-4f9e-bef6-647a13412858",
+    "isActive": true,
+    "balance": "$2,892.31",
+    "picture": "http://placehold.it/32x32",
+    "age": 35,
+    "eyeColor": "blue",
+    "name": "Bradshaw Sharp",
+    "gender": "male",
+    "company": "INCUBUS",
+    "email": "bradshawsharp@incubus.com",
+    "phone": "+1 (898) 470-2932",
+    "address": "684 Kingsway Place, Carlton, Colorado, 4451",
+    "about": "Adipisicing nulla cillum sint laboris voluptate mollit tempor velit proident. Quis ea consequat ex ea enim. Est pariatur aliquip magna duis pariatur qui. Velit nisi cillum exercitation laborum dolor aliqua laboris labore. Adipisicing incididunt mollit sunt sunt.\r\n",
+    "registered": "2015-09-19T12:50:20 -06:-30",
+    "latitude": 7.566684,
+    "longitude": 4.509571,
+    "tags": [
+      "minim",
+      "enim",
+      "tempor",
+      "duis",
+      "culpa",
+      "incididunt",
+      "sit"
+    ],
+    "friends": [
+      {
+        "id": 0,
+        "name": "Sexton Ward"
+      },
+      {
+        "id": 1,
+        "name": "Angel Livingston"
+      },
+      {
+        "id": 2,
+        "name": "Hendricks Velez"
+      }
+    ],
+    "greeting": "Hello, Bradshaw Sharp! You have 3 unread messages.",
+    "favoriteFruit": "banana"
+  },
+  {
+    "_id": "5af597993ae8b90d7d622974",
+    "index": 3,
+    "guid": "ade13f50-497a-42ec-8604-15f7420cea4c",
+    "isActive": false,
+    "balance": "$1,234.49",
+    "picture": "http://placehold.it/32x32",
+    "age": 31,
+    "eyeColor": "brown",
+    "name": "Hamilton Ballard",
+    "gender": "male",
+    "company": "TELEQUIET",
+    "email": "hamiltonballard@telequiet.com",
+    "phone": "+1 (852) 516-3011",
+    "address": "840 Debevoise Street, Hollymead, Montana, 4957",
+    "about": "Ea cillum nostrud qui reprehenderit. Elit dolore laborum proident cupidatat voluptate. Lorem ea id ipsum ut. Reprehenderit consectetur pariatur in commodo est esse anim laboris. Eu ex aliqua proident nulla proident culpa.\r\n",
+    "registered": "2016-11-09T01:35:22 -06:-30",
+    "latitude": -9.791545,
+    "longitude": 49.005972,
+    "tags": [
+      "veniam",
+      "incididunt",
+      "commodo",
+      "enim",
+      "ad",
+      "dolore",
+      "minim"
+    ],
+    "friends": [
+      {
+        "id": 0,
+        "name": "Pacheco Conway"
+      },
+      {
+        "id": 1,
+        "name": "Mccoy Carpenter"
+      },
+      {
+        "id": 2,
+        "name": "Victoria Washington"
+      }
+    ],
+    "greeting": "Hello, Hamilton Ballard! You have 1 unread messages.",
+    "favoriteFruit": "apple"
+  },
+  {
+    "_id": "5af5979982e128b09314ff12",
+    "index": 4,
+    "guid": "cc1c57ff-c42c-4004-8914-9f2985c6fd87",
+    "isActive": true,
+    "balance": "$3,258.12",
+    "picture": "http://placehold.it/32x32",
+    "age": 22,
+    "eyeColor": "brown",
+    "name": "Sheree Pitts",
+    "gender": "female",
+    "company": "FISHLAND",
+    "email": "shereepitts@fishland.com",
+    "phone": "+1 (839) 522-2048",
+    "address": "907 Douglass Street, Gerton, District Of Columbia, 4844",
+    "about": "Et reprehenderit incididunt pariatur eiusmod nulla culpa ipsum sunt qui amet ut. Minim commodo esse minim irure adipisicing. Occaecat duis officia qui aliqua cillum ullamco aliqua occaecat labore consequat qui commodo. Sint Lorem eiusmod in fugiat labore officia minim.\r\n",
+    "registered": "2015-06-18T02:37:29 -06:-30",
+    "latitude": -33.124656,
+    "longitude": -143.814399,
+    "tags": [
+      "do",
+      "culpa",
+      "aute",
+      "consequat",
+      "quis",
+      "labore",
+      "cillum"
+    ],
+    "friends": [
+      {
+        "id": 0,
+        "name": "Osborne Perry"
+      },
+      {
+        "id": 1,
+        "name": "Zamora Smith"
+      },
+      {
+        "id": 2,
+        "name": "Leann Olsen"
+      }
+    ],
+    "greeting": "Hello, Sheree Pitts! You have 4 unread messages.",
+    "favoriteFruit": "strawberry"
+  }
+]
