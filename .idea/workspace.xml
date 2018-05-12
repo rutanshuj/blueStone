@@ -46,11 +46,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="dummy2.json" pinned="false" current-in-tab="true">
+      <file leaf-file-name="dummy2.json" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/dummy2.json">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="351">
               <caret line="93" column="1" lean-forward="false" selection-start-line="93" selection-start-column="1" selection-end-line="93" selection-end-column="1" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="dummy3.json" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/dummy3.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="3842">
+              <caret line="226" column="1" lean-forward="false" selection-start-line="226" selection-start-column="1" selection-end-line="226" selection-end-column="1" />
               <folding />
             </state>
           </provider>
@@ -91,6 +101,7 @@
         <option value="$PROJECT_DIR$/scripts/finalCaptchaBreaker.py" />
         <option value="$PROJECT_DIR$/dummy.json" />
         <option value="$PROJECT_DIR$/dummy2.json" />
+        <option value="$PROJECT_DIR$/dummy3.json" />
       </list>
     </option>
   </component>
@@ -608,6 +619,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="351">
           <caret line="93" column="1" lean-forward="false" selection-start-line="93" selection-start-column="1" selection-end-line="93" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dummy3.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3842">
+          <caret line="226" column="1" lean-forward="false" selection-start-line="226" selection-start-column="1" selection-end-line="226" selection-end-column="1" />
           <folding />
         </state>
       </provider>
