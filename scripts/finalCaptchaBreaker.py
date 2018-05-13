@@ -23,7 +23,7 @@ class preProcessing:
         return img_bw
 
 if __name__ == '__main__':
-    image = cv2.imread('captcha3.png')
+    image = cv2.imread('captcha.png')
     image = Image.fromarray(image)
     p = preProcessing()
     imgOP = p.pre_proc_image(image)
@@ -35,10 +35,24 @@ if __name__ == '__main__':
     # cv2.imshow("OpenImage", erosion)
     # cv2.waitKey(0)
 
+
+    #Hough Line Transform
+    img = cv2.imread('Output1.png')
+    edges = cv2.Canny(img, 1000, 1500)
+    minLineLength = 0
+    maxLineGap = 10000000000
+    lines = cv2.HoughLinesP(edges, 1, np.pi / 180, 15, minLineLength, maxLineGap)
+    for x in range(0, len(lines)):
+        for x1, y1, x2, y2 in lines[x]:
+            cv2.line(img, (x1, y1), (x2, y2), (255, 255, 255), 2)
+
+    cv2.imwrite('houghlines3.jpg', img)
+
+
     filename = "Output1.png".format(os.getpid())
     cv2.imwrite(filename, imgOP)
 
-    text = pytesseract.image_to_string(Image.open(filename),config="-c tessedit_char_whitelist=0123456789ABCDEFGHIJKMNOPQRSTUVWXYZ")
+    text = pytesseract.image_to_string(Image.open("houghlines3.jpg"),config="-c tessedit_char_whitelist=0123456789ABCDEFGHIJKMNOPQRSTUVWXYZ")
 
     #os.remove(filename)
     print(text)
