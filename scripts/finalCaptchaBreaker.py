@@ -23,7 +23,7 @@ class preProcessing:
         return img_bw
 
 if __name__ == '__main__':
-    image = cv2.imread('captcha.png')
+    image = cv2.imread('captcha3.png')
     image = Image.fromarray(image)
     p = preProcessing()
     imgOP = p.pre_proc_image(image)
@@ -52,7 +52,7 @@ if __name__ == '__main__':
     filename = "Output1.png".format(os.getpid())
     cv2.imwrite(filename, imgOP)
 
-    text = pytesseract.image_to_string(Image.open("houghlines3.jpg"),config="-c tessedit_char_whitelist=0123456789ABCDEFGHIJKMNOPQRSTUVWXYZ")
+    text = pytesseract.image_to_string(Image.open(filename),config="-c tessedit_char_whitelist=0123456789ABCDEFGHIJKMNOPQRSTUVWXYZ")
 
     #os.remove(filename)
     print(text)
