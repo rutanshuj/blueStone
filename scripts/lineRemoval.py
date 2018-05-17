@@ -94,7 +94,7 @@ class preprocessing:
         return img_removed_line
 
 if __name__ == '__main__':
-    image = cv2.imread("Output2.png")
+    image = cv2.imread("houghlines3.png")
     img = Image.fromarray(image)
     p = preprocessing()
     imgNew = p.pre_proc_image(img)
