@@ -23,7 +23,7 @@ class preProcessing:
         return img_bw
 
 if __name__ == '__main__':
-    image = cv2.imread('captcha3.png')
+    image = cv2.imread('captcha.png')
     image = Image.fromarray(image)
     p = preProcessing()
     imgOP = p.pre_proc_image(image)
